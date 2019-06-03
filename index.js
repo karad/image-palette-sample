@@ -28,8 +28,12 @@ const rgbToHex = (rgb_arr) => {
 const main = () => {
     // Read args
     const [node, js, ...args] = process.argv
-    pickPalette(args[0])
+    if(args.length > 0) {
+        pickPalette(args[0])
+    } else {
+        console.log('to use `npm run palette <IMAGE_PATH>`')
+    }
 }
 
-main(args)
+main()
 
