@@ -12,8 +12,7 @@ const pickPalette = async (img_path) => {
     }).getPalette()
 
     return Object.getOwnPropertyNames(palettes).map((palette) => {
-        const result = {name: palette, value: rgbToHex(palettes[palette]._rgb)}
-        return result
+        return {name: palette, value: rgbToHex(palettes[palette]._rgb)}
     })
 }
 
