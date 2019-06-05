@@ -1,14 +1,15 @@
 {
   "name": "image-palette-sample",
   "version": "1.0.0",
-  "description": "",
+  "description": "make color palette from image",
   "main": "index.js",
   "scripts": {
     "palette": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Kazuhiro Hara <info@kansock.industries> (https://kansock.industries/)",
   "license": "MIT",
+  "homepage": "https://kansock.industries/",
   "dependencies": {
     "node-vibrant": "^3.2.0-alpha",
     "rgb-hex": "^3.0.0"
