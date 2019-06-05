@@ -21,12 +21,14 @@ ex.
 ```
 $ npm run palette ./test.jpg
 
-Vibrant : #e22584
-DarkVibrant : #24b4bb
-LightVibrant : #e27db1
-Muted : #b07190
-DarkMuted : #3a5557
-LightMuted : #d4a4bc
+[
+  { name: 'Vibrant', value: '#e22584' },
+  { name: 'DarkVibrant', value: '#24b4bb' },
+  { name: 'LightVibrant', value: '#e27db1' },
+  { name: 'Muted', value: '#b07190' },
+  { name: 'DarkMuted', value: '#3a5557' },
+  { name: 'LightMuted', value: '#d4a4bc' }
+]
 ```
 
 ## License

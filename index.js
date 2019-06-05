@@ -11,8 +11,9 @@ const pickPalette = async (img_path) => {
         // options here
     }).getPalette()
 
-    Object.getOwnPropertyNames(palettes).map((palette) => {
-        console.log(`${palette} : ${rgbToHex(palettes[palette]._rgb)}`)
+    return Object.getOwnPropertyNames(palettes).map((palette) => {
+        const result = {name: palette, value: rgbToHex(palettes[palette]._rgb)}
+        return result
     })
 }
 
@@ -25,11 +26,12 @@ const rgbToHex = (rgb_arr) => {
     return '#' + rgbHex(r, g, b);
 }
 
-const main = () => {
+const main = async () => {
     // Read args
     const [node, js, ...args] = process.argv
     if(args.length > 0) {
-        pickPalette(args[0])
+        const result = await pickPalette(args[0])
+        console.log(result)
     } else {
         console.log('to use `npm run palette <IMAGE_PATH>`')
     }
