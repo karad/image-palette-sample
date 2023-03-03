@@ -11,7 +11,7 @@
   "license": "MIT",
   "homepage": "https://kansock.industries/",
   "dependencies": {
-    "node-vibrant": "^3.2.0-alpha",
+    "node-vibrant": "^3.2.1-alpha.1",
     "rgb-hex": "^3.0.0"
   }
 }
